@@ -1,0 +1,46 @@
+.HomePage{
+    min-height : 100vh ;
+    background-image:url("../images/hero.svg");
+    background-size: cover;
+    background-repeat: no-repeat ;
+    display : flex; 
+    align-items: center ;
+    justify-content: center;
+    flex-wrap : wrap ;
+}
+.Container{
+    flex : .5 ;
+    padding : 20px ;
+}
+.HomePage .Container h2{
+    color : #102a42;
+    font-size :5.5em ;
+    margin: 10px 0px ;
+    line-height : 100%;
+}
+.Container .Description{
+    color : #617d98;
+    line-height: 30px ;
+    width : 70% ;
+}
+
+@media only screen and (max-width:1311px){
+    .HomePage .Container h2{
+        font-size : 3em ;
+    }
+}
+
+
+@media only screen and (max-width:615px){
+    .Container{
+        flex : 1 ;
+        padding-bottom : 0px ;
+    }
+    .HomePage .Container h2{
+        font-size : 2em ;
+        margin-bottom : 0px ;
+    }
+    .HomePage img{
+        display : none ;
+    }
+}

@@ -1,0 +1,13 @@
+.Btn{
+    outline : none ;
+    padding : 5px 20px;
+    border : none ;
+    border-radius : 5px ;
+    font-size : 1em ;
+    background-color : #222 ;
+    color : #fff; 
+    cursor: pointer;
+    display : flex ;
+    align-items : center; 
+    justify-content: center;
+}

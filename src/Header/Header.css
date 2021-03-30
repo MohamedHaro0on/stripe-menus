@@ -1,0 +1,64 @@
+.Header{
+    color : #fff ;
+    position : fixed ;
+    width : 100% ;
+    overflow: hidden;
+    height : 90px ;
+}
+.Header .NavBar{
+    display : flex ;
+    width : 80% ;
+    margin : auto ;
+    justify-content: space-around;
+    align-items : center; 
+}
+.NavBar h1 .Btn{
+    display : none;
+}
+.NavBar .Routes{
+    display : flex ;
+    padding : 0px 10px ;
+    list-style : none ;
+}
+.Routes li{
+    margin : 0px  30px ;
+}
+.Routes li a{
+    text-decoration: none;
+    font-size : 1.4em ;
+    color : #fff; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media only screen and (max-width:851px){
+    .NavBar{
+        width : 100% !important;
+        background-color :rgba(0,0,0,.9);
+    }
+ 
+}
+
+@media only screen and (max-width:739px){
+    .NavBar{
+        flex-wrap : wrap ;
+        justify-content: left !important;
+        padding: 0px    15px 10px ;
+    }
+    .NavBar h1{
+        width : 95% ;
+        display : flex; 
+        align-items : center;
+        justify-content: space-between;
+    }
+    .NavBar h1 .Btn{
+        display : flex ;
+    }
+    .Routes{
+        display : block !important;
+        width: 100%;
+        padding : 0px ;
+    }
+    .Routes li{
+        margin : 10px 0px ;
+    }
+}
