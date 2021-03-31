@@ -1,0 +1,63 @@
+ul {
+  list-style: none;
+  padding: 0px;
+}
+a {
+  color: #102a42;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+a svg {
+  margin-right: 10px;
+}
+
+.ModalContainer {
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  position: fixed;
+  padding: 40px 20px;
+  top : 0px ;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  animation-name: open;
+  animation-duration: .3s;
+}
+
+.Modal {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  position: relative;
+  height: 95%;
+}
+.Modal header button {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.Modal ul .MainRoute >a {
+  font-size: 20px;
+  font-weight : bold;
+}
+.Modal ul .MainRoute ul {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+@keyframes open {
+  0% {
+    top: 45%;
+    right: 45%;
+    left: 45%;
+    bottom: 45%;
+  }
+  100% {
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+  }
+}
