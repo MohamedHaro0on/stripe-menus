@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
 
@@ -10,12 +10,10 @@ import "./Header.css";
 
 const Header = () => {
     const [isOpened, setOpened] = useState(false);
-    const [width, setWidth] = useState(window.innerWidth);
     const toggleModal = () => {
         setOpened(prevState => !prevState);
     }
-    useEffect(() => {
-    })
+
     return (
         <>
             <header className="Header">
